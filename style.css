@@ -1,0 +1,45 @@
+/* Jede Header-/Daten-Zelle soll
+eine Border bekommen.*/
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+/* Tabelle bekommt einen Rand */
+table {
+  border: 1px solid black;
+  text-align: center;
+  /* Doppelränder verschmelzen */
+  /* border-collapse: collapse; */
+}
+.microsoft {
+  width: 200px;
+  /* border-radius: 100px; */
+  padding: 10px;
+}
+.amazon {
+  width: 200px;
+  border-radius: 20%;
+  padding: 10px;
+}
+tr td:nth-child(2) {
+  /* oder mit strong: <td><strong>Microsoft</strong></td> */
+  font-weight: bold;
+}
+/* Zebra-Styling 
+    nth-child: das x-te Kind-element(td's oder th's) unter den tr's
+    Klammern() mit a als Wert.
+    even: x nimmt den Wert aller geraden Zahlen an.(2,4,6,8,10,...)
+    odd: x nimmt den Wert aller ungeraden Zahlen an.(1,3,5,7,9,11,...)
+*/
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+/* Färbt die dritte Tabellenzeile orange. */
+tr:nth-child(3) {
+  color: orange;
+}
+tr:nth-child(3) a{
+    color: orange;
+}
